@@ -3,6 +3,7 @@ import HomeLayout from "./HomeLayout"
 import MainPage from "./Pages/MainPage"
 import AboutPage from "./Pages/AboutPage"
 import ProjectPage from "./Pages/ProjectPage"
+import ContactPage from "./Pages/ContactPage"
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       {/* Layout Route */}
       <Route path="/" element={<HomeLayout />}>
         <Route index element={<MainPage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="project" element={<ProjectPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Route>
     </Routes>
   )

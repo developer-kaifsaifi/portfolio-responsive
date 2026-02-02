@@ -17,10 +17,10 @@ export default function HomeLayout() {
           wheelMultiplier: 1,
           touchMultiplier: 2,
         }}>
-      <>
+      <><Footer />
         <Navbar />
         <Outlet />   {/* 👈 yahin pages inject honge */}
-        <Footer />
+        
       </>
     </ReactLenis>
   )

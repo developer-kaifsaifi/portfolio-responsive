@@ -83,7 +83,7 @@ export default function Navbar() {
                     transition={{ type: "spring", stiffness: 500, damping: 30 }}
                     className="relative z-10 inline-flex flex-col items-center whitespace-nowrap"
                   >
-                    {item.title}
+                   {item.title}
                     {isActive && (
                       <motion.span
                         layoutId="active-line"
