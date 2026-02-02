@@ -1,0 +1,77 @@
+import { Routes, Route } from "react-router-dom"
+import HomeLayout from "./HomeLayout"
+import MainPage from "./Pages/MainPage"
+import AboutPage from "./Pages/AboutPage"
+import ProjectPage from "./Pages/ProjectPage"
+
+function App() {
+  return (
+    <Routes>
+      {/* Layout Route */}
+      <Route path="/" element={<HomeLayout />}>
+        <Route index element={<MainPage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="project" element={<ProjectPage />} />
+      </Route>
+    </Routes>
+  )
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import './App.css'
+// import Navbar from './components/Navbar'
+// import Footer from './components/Footer'
+// import ReactLenis from 'lenis/react'
+// import Outlet from './Pages/MainPage'
+// import { Route, Routes } from 'react-router-dom'
+// import AboutPage from './Pages/AboutPage'
+// import ProjectPage from './Pages/ProjectPage'
+// import HomeLayout from './HomeLayout'
+
+
+// function App() {
+
+//   return (
+//     <>
+    
+          
+//     <Routes>
+      
+//       <Route path='/about' element={<AboutPage/>} />
+//       <Route path='/project' element={<ProjectPage/>} />
+//     </Routes>
+    
+//     </>
+//   )
+// }
+
+// export default App
