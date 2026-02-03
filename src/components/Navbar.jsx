@@ -1,38 +1,39 @@
 import React, { useState } from "react";
 import "./utils.css";
 import { motion } from "motion/react";
-import { div } from "motion/react-client";
+import { Link } from "react-router-dom";
+import { MdKeyboardCommandKey } from "react-icons/md";
+
+
 
 const navItems = [
   {
     id: "home",
-    title: "Home",
+    title: "Home", path: "/" 
   },
   {
     id: "about",
-    title: "About",
+    title: "About", path: "/about" 
   },
   {
     id: "projects",
-    title: "Projects",
+    title: "Projects", path: "/projects" 
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contact", path: "/contact" 
   },
-  {
-    id: "snippet",
-    title: "Snippet",
-  },
+  
 ];
 
 export default function Navbar() {
   const [active, setActive] = useState(navItems[0].id);
 
+
   return (
     <>
       <div className="flex z-999 w-screen h-40 left-1/2 transform -translate-x-1/2 fixed top-7 justify-center">
-        <div className="absolute h-10 w- text-white w-100 top-3 left-20 ">
+        <div className="absolute h-10 w- text-[#BFBFBF] w-100 top-3 left-20 ">
           <svg
             className=""
             xmlns="http://www.w3.org/2000/svg"
@@ -48,16 +49,24 @@ export default function Navbar() {
             />{" "}
           </svg>{" "}
         </div>{" "}
-        <nav className="bg-[#FFFFFF1A] relative z-9999 pl-1 w-[445.49px] pr-1 h-[41.8px] flex items-center justify-center border-2 border-[#EDEDED0D] text-white rounded-full">
-          <ul className="flex gap-1 font-jost relative">
+        <nav className="bg-[#FFFFFF1A] relative z-9999 pl-1 w-[342.49px] pr-1 h-[41.8px] flex items-center justify-center border-2 border-[#EDEDED0D] text-[#BFBFBF] rounded-full">
+          <ul className="flex gap-1 text-[#BFBFBF] font-jost relative">
             {navItems.map((item) => {
               const isActive = active === item.id;
 
               return (
-                <li
+
+
+               <Link
+          key={item.id}
+          to={item.path}
+          className="text-white hover:text-amber-400"
+        >
+          
+          <li
                   key={item.id}
                   onClick={() => setActive(item.id)}
-                  className="relative cursor-pointer px-5 py-[5.6px] rounded-full text-[14px] flex items-center justify-center"
+                  className="relative cursor-pointer text-[#BFBFBF] jost px-5 py-[5.6px] rounded-full text-[14px] flex items-center justify-center"
                 >
 
                   {isActive && (
@@ -74,7 +83,7 @@ export default function Navbar() {
                       />{" "}
                       <motion.span
                         layoutId="active-line"
-                        className="absolute bottom-[37px] h-1 shadow-[0_0_10px_#ffffff] w-9 bg-white rounded-t-full "
+                        className="absolute bottom-9.25 h-1 shadow-[0_0_10px_#ffffff] w-9 bg-white rounded-t-full "
                       />
                     </motion.div>
                   )}
@@ -83,7 +92,9 @@ export default function Navbar() {
                     transition={{ type: "spring", stiffness: 500, damping: 30 }}
                     className="relative z-10 inline-flex flex-col items-center whitespace-nowrap"
                   >
-                   {item.title}
+                   
+          {item.title}
+        
                     {isActive && (
                       <motion.span
                         layoutId="active-line"
@@ -99,23 +110,12 @@ export default function Navbar() {
                     )}
                   </span>
                 </li>
-              );
+                
+              </Link> );
             })}
           </ul>
         </nav>
-        <div className="w-10 h-10 flex items-center justify-center rounded-full mt-0.5 fixed right-40 hover:bg-[#EDEDED0D]"><svg
-                  
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  className="w-full h-full"
-                  viewBox="0.09440000355243683 9.806922912597656 94.70084381103516 26.84000015258789"
-                >
-                  <path
-                    d="M17.5 3C15.57 3 14 4.57 14 6.5V8h-4V6.5C10 4.57 8.43 3 6.5 3S3 4.57 3 6.5 4.57 10 6.5 10H8v4H6.5C4.57 14 3 15.57 3 17.5S4.57 21 6.5 21s3.5-1.57 3.5-3.5V16h4v1.5c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5H16v-4h1.5c1.93 0 3.5-1.57 3.5-3.5S19.43 3 17.5 3zM16 8V6.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5S18.33 8 17.5 8H16zM6.5 8C5.67 8 5 7.33 5 6.5S5.67 5 6.5 5 8 5.67 8 6.5V8H6.5zm3.5 6v-4h4v4h-4zm7.5 5c-.83 0-1.5-.67-1.5-1.5V16h1.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5zm-11 0c-.83 0-1.5-.67-1.5-1.5S5.67 16 6.5 16H8v1.5c0 .83-.67 1.5-1.5 1.5z"
-                    fill="white"
-                  />
-                  </svg></div>
+        <span className="w-10 h-10 flex items-center justify-center rounded-full mt-0.5 fixed pointer right-40 hover:bg-[#EDEDED0D]">< MdKeyboardCommandKey className="scale-150 fill-white"  /></span>
       </div>
       <div className="fixed w-screen bg-transparent top-0 h-20 backdrop-blur-[3px] z-990 "/>
     </>

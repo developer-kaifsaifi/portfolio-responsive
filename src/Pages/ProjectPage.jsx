@@ -27,7 +27,7 @@ export default function ProjectPage() {
          <div className="w-min-[70vw] bg-[#000000] px-50 text-center relative h-full text-[72px] outfit text-[#9C9C9C] flex flex-col   items-center justify-center font-semibold  " >
 
           <h4 className="text-[18px] font-light text-[#9C9C9C]  outfit">
-           <span className="">Need help in your web development ?</span><span className=" ml-2 font-semibold underline"><a href="">Lets Talk</a></span>
+           <span className="">Need help in your web development ?</span><span className=" ml-2 font-semibold underline"><a href="">Let's Talk!</a></span>
           </h4>
          </div>
          </div>

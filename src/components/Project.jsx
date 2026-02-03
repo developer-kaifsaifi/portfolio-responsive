@@ -15,16 +15,16 @@ export default function Project() {
         </div>
         <div className="min-w-lg flex flex-col py-8 gap-14 min-h-xl">
           <div className="flex gap-4  w-307 h-[426.23px] ">
-            <div className="w-[381.59px] h-[426.23px] rounded-l-3xl border-2  border-[#EDEDED0D] bg-[url(./assets/mac.png)] bg-[length:120%_110%] bg-center  "></div>
-            <div className="w-[calc(100%-381.59px-50px)] h-[426.23px] rounded-r-3xl border-2  border-[#EDEDED0D] bg-amber-400   "></div>
+            <div className="w-[381.59px] h-[426.23px] rounded-l-3xl border-2  border-[#EDEDED0D] bg-[url(./assets/mac.png)] bg-size-[120%_110%] bg-center  "></div>
+            <div className="w-[calc(100%-381.59px-50px)] h-[426.23px] rounded-r-3xl border-2  border-[#333333]   "><div className="w-full h-full "></div></div>
           </div>
           <div className="flex gap-4  w-307 h-[426.23px] ">
-            <div className="w-[calc(100%-381.59px-50px)] h-[426.23px] rounded-l-3xl border-2 border-[#EDEDED0D] bg-amber-400   "></div>
+            <div className="w-[calc(100%-381.59px-50px)] h-[426.23px] rounded-l-3xl border-2   border-[#333333]    "></div>
             <div className="w-[381.59px] h-[426.23px] rounded-r-3xl border-2 border-[#EDEDED0D] bg-[url(./assets/messenger.jpg)] bg-cover bg-center  "></div>
           </div>
           <div className="flex gap-4  w-307 h-[426.23px] ">
             <div className="w-[381.59px] h-[426.23px] rounded-l-3xl border-2 border-[#EDEDED0D] bg-[url(./assets/pc.png)] bg-center  bg-no-repeat bg-size-[99%_99%]   "></div>
-            <div className="w-[calc(100%-381.59px-50px)] h-[426.23px] rounded-r-3xl border-2 border-[#EDEDED0D] bg-amber-400   "></div>
+            <div className="w-[calc(100%-381.59px-50px)] h-[426.23px] rounded-r-3xl border-2  border-[#333333]    "></div>
           </div>
         </div>
       </div>

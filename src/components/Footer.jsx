@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Footer() {
   const [ishoveredgithub, setIshoveredgithub] = useState(false);
@@ -81,18 +83,36 @@ export default function Footer() {
                     GENERAL
                   </li>
                   <li className="text-[white] text text-[16px] font-semibold outfit ">
-                    Home
+                    <Link
+          
+          to="/"
+          className="text-white hover:text-amber-400"
+        >
+          Home
+        </Link>
                   </li>
                   <br />
                   <li className="text-[white] text text-[16px] font-semibold outfit ">
-                    About
+                    <Link
+          
+          to="/about"
+          className="text-white hover:text-amber-400"
+        >
+          About
+        </Link>
                   </li>
                   <br />
                   <li className="text-[white] text text-[16px] font-semibold outfit ">
-                    Project
+                   <Link
+          
+          to="/projects"
+          className="text-white hover:text-amber-400"
+        >
+          Project
+        </Link>
                   </li>
                   <br />
-                  <li className="text-[white] text text-[16px] font-semibold outfit ">
+                  <li className="text-[#525252] text-[16px]  font-semibold outfit ">
                     Snippet
                   </li>
                 </ul>
