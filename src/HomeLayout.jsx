@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
+import Navbar from "./comfolder/Navbar"
+import Footer from "./comfolder/Footer"
 import ReactLenis from "lenis/react"
 
 export default function HomeLayout() {

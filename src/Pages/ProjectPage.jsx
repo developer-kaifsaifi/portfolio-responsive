@@ -1,7 +1,7 @@
 import React from "react";
-import Project from "../components/Project";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Project from "../comfolder/Project";
+import Navbar from "../comfolder/Navbar";
+import Footer from "../comfolder/Footer";
 import ReactLenis from "lenis/react";
 ReactLenis
 

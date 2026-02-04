@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./utils.css";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { MdKeyboardCommandKey } from "react-icons/md";
+import CommandMenu from "./CommandMenu";
+
+
 
 
 
@@ -30,8 +32,13 @@ export default function Navbar() {
   const [active, setActive] = useState(navItems[0].id);
 
 
+ const CommandHandler = () => {
+
+ }
+
   return (
-    <>
+    <> 
+
       <div className="flex z-999 w-screen h-40 left-1/2 transform -translate-x-1/2 fixed top-7 justify-center">
         <div className="absolute h-10 w- text-[#BFBFBF] w-100 top-3 left-20 ">
           <svg
@@ -115,7 +122,7 @@ export default function Navbar() {
             })}
           </ul>
         </nav>
-        <span className="w-10 h-10 flex items-center justify-center rounded-full mt-0.5 fixed pointer right-40 hover:bg-[#EDEDED0D]">< MdKeyboardCommandKey className="scale-150 fill-white"  /></span>
+        <span className="w-10 h-10 flex items-center justify-center rounded-full mt-0.5 fixed pointer right-40 hover:bg-[#EDEDED0D]"><CommandMenu/></span>
       </div>
       <div className="fixed w-screen bg-transparent top-0 h-20 backdrop-blur-[3px] z-990 "/>
     </>

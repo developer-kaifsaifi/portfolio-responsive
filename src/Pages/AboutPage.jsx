@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import About from '../components/About'
+import Navbar from '../comfolder/Navbar'
+import Footer from '../comfolder/Footer'
+import About from '../comfolder/About'
 import ReactLenis from 'lenis/react'
 
 export default function AboutPage() {

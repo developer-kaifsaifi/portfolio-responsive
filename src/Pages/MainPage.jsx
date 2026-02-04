@@ -1,7 +1,7 @@
-import Home from "../components/Home"
-import Project from "../components/Project"
-import Skills from "../components/Skills"
-import About from "../components/About"
+import Home from "../comfolder/Home"
+import Project from "../comfolder/Project"
+import Skills from "../comfolder/Skills"
+import About from "../comfolder/About"
 
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../components/Contact'
+import Contact from '../comfolder/Contact'
 import ReactLenis from 'lenis/react'
 import { Toaster } from 'react-hot-toast'
 
