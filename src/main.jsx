@@ -9,7 +9,7 @@ import CommandDemo from './comfolder/CommandMenu';
 ReactDom.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     
-  
+  <App/>
     {/* <CommandDemo/> */}
   </BrowserRouter>,
 )
