@@ -73,17 +73,17 @@ e.preventDefault();
 
   return (
     <>
-    <div className='w-full flex flex-col items-center justify-start  h-[120vh] bg-[#000000]'>
-         <div className="w-min-[70vw]  px-50 text-center relative h-50 text-[72px] outfit text-[#9C9C9C] flex flex-col   items-center justify-start pt-20 font-semibold  ">
+    <div className='w-full flex flex-col items-center justify-start  md:h-[120vh] bg-[#000000]'>
+         <div className="md:w-min-[70vw]  md:px-50 text-center relative h-50 md:text-[4.5rem] outfit text-[#9C9C9C] flex flex-col   items-center justify-start pt-20 font-semibold  ">
           {" "}
-          <h3 className="outfit  text-white text-[44px]">
+          <h3 className="outfit text-[2.5rem] text-white md:text-[2.75rem]">
            Contact
           </h3>
           <h4 className="text-[18px] font-light text-[#9C9C9C]  outfit">
             hit me if up if you have any questions
           </h4> {" "}
         </div>
- <div className="w-min-[50vw]  px-30 text-center relative h-full text-[14px] outfit text-[#ffffff] flex flex-col   items-center justify-start pt-20 font-semibold  ">
+ <div className="md:w-min-[50vw] min-w-screen   md:px-30 text-center px-5 relative h-full text-[14px] outfit text-[#ffffff] flex flex-col   items-center justify-start pt-20 font-semibold  ">
     <form ref={formRef} onSubmit={SubmitHandler} action="">
        <div className=' flex flex-col mb-10 items-start'><label htmlFor="name-field">Name</label>
         <input name='name' required onChange={(e) =>{
@@ -95,7 +95,7 @@ e.preventDefault();
           id="name-field"
           
           
-          className='focus:outline-none w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-10 mt-3' type="text"  /></div> 
+          className='focus:outline-none min-w-full relative md:w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-10 mt-3' type="text"  /></div> 
         <div className='flex flex-col mb-10 items-start'><label htmlFor="email-field">Email</label>
         <input name='email' 
         required
@@ -104,7 +104,7 @@ e.preventDefault();
           }
           }
           id="email-field"
-          value={email} className='focus:outline-none w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-10 mt-3' type="email"  /></div> 
+          value={email} className='focus:outline-none min-w-full relative md:w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-10 mt-3' type="email"  /></div> 
         <div className='flex flex-col mb-10 items-start'><label htmlFor="text-field">Message</label>
         <textarea
         name='message'
@@ -116,10 +116,10 @@ e.preventDefault();
           }
 id="text-field"
 
-          value={message}  className='focus:outline-none
-           resize-none w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-40 mt-3'  ></textarea></div>
+          value={message}  className='focus:outline-none min-w-full relative
+           resize-none md:w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-40 mt-3'  ></textarea></div>
         <div className='flex flex-col mb-10 items-start'>
-        <button type='submit' className=' pointer flex items-center justify-center bg-[#18181B] hover:bg-[#262628] resize-none w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-10 mt-3' id="namefeild" >Let's talk!</button></div> 
+        <button type='submit' className='min-w-full pointer flex items-center justify-center bg-[#18181B] hover:bg-[#262628] resize-none md:w-180 border rounded-md px-2 py-3.5 border-[#53515B] h-10 mt-3' id="namefeild" >Let's talk!</button></div> 
 
 
     </form>

@@ -27,16 +27,16 @@ export default function Skills() {
 
   return (
     <div className="w-screen z-50  min-h-[70vh] flex flex-col items-center  py-10 bg-[#000000]">
-      <div className="w-md mt-14 gap-4 flex flex-col items-center justify-center">
+      <div className="md:w-md mt-14 gap-4 flex flex-col items-center justify-center">
           <h3 className="text-[#9C9C9C] tracking-widest outfit text-[14px] text-uppercase">
             CORE STRENGTH
           </h3>
-          <h2 className="outfit text-white  text-[54px]">
+          <h2 className="outfit text-white text-[2.4rem] md:text-[3.375rem]">
            <span className=" text-glow">Competencies</span>  
             <span className="moving-bg-text nyght font-semibold px-3  ">skills</span>
           </h2>
         </div>
-      <div className="w-full pl-66 pr-66 mt-6 text-center relative h-20 top-3 text-[13px] outfit text-[#9C9C9C] flex   items-center justify-center flex-wrap  ">
+      <div className="min-w-full px-3 pb-20 md:pl-66 md:pr-66 mt-6 text-center relative  md:h-20 top-3 text-[13px] outfit text-[#9C9C9C] flex md:pb-0  items-center justify-center flex-wrap  ">
           { SkillsImg.map((skill) => {
              return (
               <span key={skill.id} className={`m-1 mr-2 jost text-white text-[16px] mx-0.5 px-3 bg-[#161616] flex items-center justify-center gap-2 py-1.5 border border-[#333333] rounded-md jost`}>

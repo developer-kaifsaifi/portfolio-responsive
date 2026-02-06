@@ -21,8 +21,8 @@ export default function ProjectPage() {
         }}>
          <div className='w-full  bg-[#00000000]' /><div className="w-screen pointer-events-none h-screen fixed z-500  bg-[#00000000] ">
         {" "}
-        <div className="w-35  rounded-full fixed top-56 blue-shadow right-30  rotate-130" />
-        <div className="w-35  rounded-full fixed -bottom-10 pink-shadow left-30  rotate-130" /></div>
+        <div className="w-35  rounded-full fixed  md:top-56 blue-shadow md:right-30 right-5 rotate-130" />
+        <div className="w-35  rounded-full fixed md:-bottom-10 -bottom-25 pink-shadow md:left-30  rotate-130" /></div>
          <div className="relative bg-transparent"><Project />
          <div className="w-min-[70vw] bg-[#000000] px-50 text-center relative h-full text-[72px] outfit text-[#9C9C9C] flex flex-col   items-center justify-center font-semibold  " >
 

@@ -4,9 +4,16 @@ import MainPage from "./Pages/MainPage"
 import AboutPage from "./Pages/AboutPage"
 import ProjectPage from "./Pages/ProjectPage"
 import ContactPage from "./Pages/ContactPage"
+import Home from "./comfolder/Home"
+import About from "./comfolder/About"
+import Footer from "./comfolder/Footer"
+import Navbar from "./comfolder/Navbar"
+import Skills from "./comfolder/Skills"
+import Contact from "./comfolder/Contact"
 
 function App() {
   return (
+
     <Routes>
       {/* Layout Route */}
       <Route path="/" element={<HomeLayout />}>
