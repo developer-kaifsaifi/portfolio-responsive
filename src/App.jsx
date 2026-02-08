@@ -10,9 +10,12 @@ import Footer from "./comfolder/Footer"
 import Navbar from "./comfolder/Navbar"
 import Skills from "./comfolder/Skills"
 import Contact from "./comfolder/Contact"
+import ScrollToTop from "./comfolder/ScrollToTop"
 
 function App() {
-  return (
+  return (<>
+
+  <ScrollToTop/>
 
     <Routes>
       {/* Layout Route */}
@@ -23,7 +26,7 @@ function App() {
         <Route path="contact" element={<ContactPage/>} />
       </Route>
     </Routes>
-  )
+ </> )
 }
 
 export default App
