@@ -107,7 +107,7 @@ const handleCommandClick = (item) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="min-w-full  relative rounded-3xl bg-transparent relative border-2 border-[#333333] backdrop-blur-2xl h-100"
+        className="min-w-full  relative rounded-3xl bg-transparent  border-2 border-[#333333] backdrop-blur-2xl h-100"
       >
         <div className="text-[#333333] h-11 w-full border-b-[#333333]">
           <LuTextSearch className="absolute mt-2 ml-4 scale-200 top-1" />

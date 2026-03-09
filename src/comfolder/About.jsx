@@ -122,14 +122,14 @@ export default function About() {
         </div>
         <div className="min-w-20 pointer   flex  items-center justify-center md:justify-start  gap-4  h-20 mt-1">
           <h3 className="outfit relative  text-white  text-[20px]">Resume</h3>
-          <button className="btn relative border-2 border-[#EDEDED0D] bg-white flex  items-center justify-center  w-8 h-8 text-black rounded-full  font-bold  ">
+          <a target="_blank" href="https://drive.google.com/file/d/1BkVKenMypECjYObXM7xN7wUR85VxqIK-/view?usp=drive_link"><button className="btn relative border-2 border-[#EDEDED0D] bg-white flex  items-center justify-center  w-8 h-8 text-black rounded-full  font-bold  ">
             <span className="a bg-transparent  flex  items-center justify-center w-full h-full   a1">
               <IoIosArrowRoundForward />
             </span>
             <span class="a  bg-transparent flex  items-center justify-center w-full h-full font-sm   a2">
               <IoIosArrowRoundForward />
             </span>
-          </button>
+          </button></a>
         </div>
       </div><div className="px-10 relative  md:px-50 md:pt-60 bg-[#000000] "><div className="min-w-[70vw] md:min-w-90 bg-no-repeat md:rounded-r-4xl bg- md:min-h-120 md:rounded-2xl min-h-[48vh] pointer hover:scale-105 transition-all duration-500 ease-in-out  rounded-4xl  bg-center bg-cover md:bg-contain bg-[url(./assets/kaifimg.png)]"></div></div></div>
       <div className=" bg-[#000000]  w-full h-70 flex items-center justify-center  ">
