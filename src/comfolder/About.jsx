@@ -52,7 +52,7 @@ export default function About() {
           {" "}
           <h3 className="outfit mt-5  text-[1rem] md:text-[1.25rem]">
             <span className="font-bold">I'm Mohammad Kaif —</span> a passionate
-            Full-Stack Web Developer focused on creating engaging and efficient
+            MERN-Stack Web Developer focused on creating engaging and efficient
             web applications. I enjoy working across both frontend and backend,
             building responsive user interfaces and scalable server-side
             solutions using the JavaScript ecosystem.
