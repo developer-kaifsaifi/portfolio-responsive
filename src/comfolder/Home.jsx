@@ -28,7 +28,7 @@ export default function Home() {
           <div className="min-w-[40vw] mt-26 flex flex-wrap px-4  text-center md:relative md:top-24 h-[40vh] text-[2rem] md:text-[3.75rem] outfit text-white  flex-col  items-center justify-center font-semibold  ">
             <h1>Hey there! I'm Mohammad Kaif 👋</h1>
             <h1 className=" ">
-              a Full-Stack Web{" "}
+              a MERN-Stack Web{" "}
               <span className="nyght italic  text-[2.5rem]  md:text-[4.75rem] moving-bg-text ">
                 {" "}
                 Developer
