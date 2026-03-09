@@ -27,7 +27,7 @@ const commandItems = [
   { icon: <CgProfile /> , type: "internal"    ,   title: "About", path: "/about" ,     desc: "Learn more About me" },
   { icon: <VscFolderLibrary /> , type:  "internal"   ,   title: "Projects", path: "/projects",      desc: "Showcase of my projects" },
   { icon: <MdHandshake /> , type: "internal"    ,   title: "Hire me", path: "/contact"   ,   desc: "Let's make Webs together" },
-  { icon: <TiDocumentText /> , type: "external"    , url: "https://x.com/kaifs4ifi" ,  title: "Resume",      desc: "View my Resume" },
+  { icon: <TiDocumentText /> , type: "external"    , url: "https://drive.google.com/file/d/1BkVKenMypECjYObXM7xN7wUR85VxqIK-/view?usp=sharing" ,  title: "Resume",      desc: "View my Resume" },
   { icon: <svg
               className="cursor-pointer"
               
