@@ -11,11 +11,13 @@ import Navbar from "./comfolder/Navbar"
 import Skills from "./comfolder/Skills"
 import Contact from "./comfolder/Contact"
 import ScrollToTop from "./comfolder/ScrollToTop"
+import Cursor from "./comfolder/Cursor"
 
 function App() {
   return (<>
 
   <ScrollToTop/>
+  <Cursor/>
 
     <Routes>
       {/* Layout Route */}

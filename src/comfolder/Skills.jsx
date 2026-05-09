@@ -1,8 +1,7 @@
-import React from 'react'
-
+import React from 'react';
+import { motion } from 'motion/react';
 
 export default function Skills() {
-
   const SkillsImg = [
     { id: 1, title: "JavaScript", icon: "https://cdn.simpleicons.org/javascript" },
     { id: 2, title: "React", icon: "https://cdn.simpleicons.org/react" },
@@ -22,31 +21,70 @@ export default function Skills() {
     { id: 16, title: "Shadcn UI", icon: "https://images.seeklogo.com/logo-png/51/1/shadcn-ui-logo-png_seeklogo-519786.png" },
     { id: 17, title: "Netlify", icon: "https://cdn.simpleicons.org/netlify" },
     { id: 18, title: "Vercel", icon: "https://cdn.simpleicons.org/vercel" },
-    {id: 19, title: "Restful APIs", icon: "https://cdn-icons-png.flaticon.com/512/888/888879.png?w=360" }
-]
+    { id: 19, title: "Restful APIs", icon: "https://cdn-icons-png.flaticon.com/512/888/888879.png?w=360" }
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, // Har ek icon ke beech ka gap
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.5, y: 20 },
+    visible: { 
+      opacity: 1, 
+      scale: 1, 
+      y: 0,
+      transition: { type: "spring", stiffness: 100 } 
+    },
+  };
 
   return (
-    <div className="w-screen z-50  min-h-[70vh] flex flex-col items-center  py-10 bg-[#000000]">
-      <div className="md:w-md mt-14 gap-4 flex flex-col items-center justify-center">
-          <h3 className="text-[#9C9C9C] tracking-widest outfit text-[14px] text-uppercase">
-            CORE STRENGTH
-          </h3>
-          <h2 className="outfit text-white text-[2.4rem] md:text-[3.375rem]">
-           <span className=" text-glow">Competencies</span>  
-            <span className="moving-bg-text nyght font-semibold px-3  ">skills</span>
-          </h2>
-        </div>
-      <div className="min-w-full px-3 pb-20 md:pl-66 md:pr-66 mt-6 text-center relative  md:h-20 top-3 text-[13px] outfit text-[#9C9C9C] flex md:pb-0  items-center justify-center flex-wrap  ">
-          { SkillsImg.map((skill) => {
-             return (
-              <span key={skill.id} className={`m-1 mr-2 jost text-white text-[16px] mx-0.5 px-3 bg-[#161616] flex items-center justify-center gap-2 py-1.5 border border-[#333333] rounded-md jost`}>
-                <img src={skill.icon} alt={skill.title} className={`${skill.id === 5 || skill.id === 12 ? "invert" : "text-white" } w-5 h-5`} />
-                {skill.title}
-              </span>
-          
-          )})}
-        </div>
- 
+    <div className="w-screen z-50 min-h-[70vh] flex flex-col items-center py-10 bg-[#000000]">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="md:w-md mt-14 gap-4 flex flex-col items-center justify-center"
+      >
+        <h3 className="text-[#9C9C9C] tracking-widest outfit text-[14px] text-uppercase">
+          CORE STRENGTH
+        </h3>
+        <h2 className="outfit text-white text-[2.4rem] md:text-[3.375rem]">
+          <span className="text-glow">Competencies</span>  
+          <span className="moving-bg-text nyght font-semibold px-3">skills</span>
+        </h2>
+      </motion.div>
+
+      {/* Ye wala div trigger karega stagger ko */}
+      <motion.div 
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible" // Jab screen pe aaye tab start ho
+        viewport={{ once: true, amount: 0.1 }} // 10% visible hote hi chal jayega
+        className="min-w-full px-3 pb-20 md:pl-66 md:pr-66 mt-6 text-center relative flex items-center justify-center flex-wrap"
+      >
+        {SkillsImg.map((skill) => (
+          <motion.span 
+            key={skill.id} 
+            variants={itemVariants} // Children automatically pick up the variants
+            whileHover={{ scale: 1.1 }}
+            className="m-1 mr-2 jost text-white text-[16px] mx-0.5 px-3 bg-[#161616] flex items-center justify-center gap-2 py-1.5 border border-[#333333] rounded-md"
+          >
+            <img 
+              src={skill.icon} 
+              alt={skill.title} 
+              className={`${[5, 12, 18].includes(skill.id) ? "invert" : ""} w-5 h-5 object-contain`} 
+            />
+            {skill.title}
+          </motion.span>
+        ))}
+      </motion.div>
     </div>
-  )
+  );
 }
