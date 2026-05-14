@@ -108,15 +108,19 @@ export default function Footer() {
                 <li className="text-white text-[12px] font-light tracking-widest mb-2 opacity-50">
                   SPECIFICS
                 </li>
+                <Link 
+                to="/contact">
                 <li className="text-white text-[16px] text font-semibold">
                   Hire Me
-                </li>
+                </li></Link>
                 <li className="text-[#525252] text-[16px] font-semibold">
                   Privacy Policy
                 </li>
-                <li className="text-white text-[16px] text font-semibold">
-                  Contact
-                </li>
+                <Link to="/contact">
+                  <li className="text-white text-[16px] text font-semibold">
+                    Contact
+                  </li>
+                </Link>
                 <li className="text-[#525252] text-[16px] font-semibold">
                   Link
                 </li>

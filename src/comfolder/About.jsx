@@ -23,7 +23,7 @@ export default function About() {
   };
 
   return (
-    <div className="bg-[#000000] overflow-x-hidden">
+    <div className="bg-[#000000] overflow-hidden">
       <motion.div
         ref={containerRef}
         initial="hidden"
