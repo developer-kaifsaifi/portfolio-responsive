@@ -85,7 +85,7 @@ export default function About() {
           {/* Resume Section */}
           <motion.div variants={itemVariants} className="min-w-20 pointer flex items-center justify-center md:justify-start gap-4 h-20 mt-1">
             <h3 className="outfit relative text-white text-[20px]">Resume</h3>
-            <a target="_blank" download="Kaif-Resume.pdf" href="./../../../public/resume-kkk.pdf">
+            <a target="_blank" download="Kaif-Resume.pdf" href="/resume.pdf">
               <motion.button 
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
